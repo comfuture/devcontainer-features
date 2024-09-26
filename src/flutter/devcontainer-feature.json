@@ -5,10 +5,8 @@
   "description": "Flutter development environment",
   "options": {},
   "dependsOn": {
-    "features": {
-      "ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
-      "ghcr.io/devcontainers-community/templates/dart:1": {}
-    }
+    "ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+    "ghcr.io/devcontainers-community/templates/dart:1": {}
   },
   "installsAfter": [
     "ghcr.io/nordcominc/devcontainer-features/android-sdk",
