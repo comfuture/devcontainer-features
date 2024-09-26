@@ -1,0 +1,36 @@
+{
+  "name": "Flutter",
+  "id": "flutter",
+  "version": "0.1.0",
+  "description": "Flutter development environment",
+  "options": {},
+  "installsAfter": [
+    "ghcr.io/nordcominc/devcontainer-features/android-sdk",
+    "ghcr.io/devcontainers-community/templates/dart"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "tamasfe.even-better-toml",
+        "dart-code.dart-code",
+        "dart-code.flutter"
+      ],
+      "settings": {
+        "files.watcherExclude": {
+          "**/target/**": true
+        }
+      },
+      "launch": {
+        "configurations": [
+          {
+            "name": "Flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug"
+          }
+        ]
+      }
+    }
+  }
+}
